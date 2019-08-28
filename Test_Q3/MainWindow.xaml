@@ -1,0 +1,19 @@
+﻿<Window x:Class="Test_Q3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Test_Q3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="320" Width="800" FontSize="26">
+    <Grid>
+        <Label Content="URL :" HorizontalAlignment="Left" Margin="90,62,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.606,-1.529"/>
+        <TextBox Name="UrlName" HorizontalAlignment="Left" Height="45" Margin="217,62,0,0" TextWrapping="Wrap" Text="{Binding Url}" VerticalAlignment="Top" Width="488"/>
+        <Label Content="Size :" HorizontalAlignment="Left" Margin="90,138,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.501,-0.161"/>
+        <TextBlock Name="ResultTxtBlk"  HorizontalAlignment="Left" Margin="239,138,0,0" TextWrapping="Wrap" Text="{Binding Results.Result}" VerticalAlignment="Top"/>
+        <Button Content="Start" Name="StartBtn" HorizontalAlignment="Left" Margin="133,201,0,0" VerticalAlignment="Top" Width="148" Height="58"
+                Click="Button_Click"/>
+                <!-- Command="{Binding MyDelegate}" -->                
+
+    </Grid>
+</Window>
